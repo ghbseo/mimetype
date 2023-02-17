@@ -1,0 +1,14 @@
+Type=Exe
+Form=Form1.frm
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\system32\stdole2.tlb#OLE Automation
+Object={F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0; comctl32.ocx
+Object={6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.2#0; comdlg32.ocx
+Module=Module1; Module1.bas
+Module=Module2; Module2.bas
+IconForm="Form1"
+Startup="Form1"
+HelpFile=""
+Title="My VB Project"
+ExeName32="MyApp.exe"
+Command32=""
+Name="MyProject"

@@ -1,0 +1,38 @@
+IDENTIFICATION DIVISION.
+       PROGRAM-ID. EXAMPLE.
+
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           COPY EMPLOYEE-FILE.
+
+       DATA DIVISION.
+       FILE SECTION.
+       COPY EMPLOYEE-RECORD.
+
+       WORKING-STORAGE SECTION.
+       COPY WORKING-STORAGE-VARIABLES.
+
+       PROCEDURE DIVISION.
+       MAIN-PARAGRAPH.
+           DISPLAY "STARTING EXAMPLE PROGRAM".
+           PERFORM PROCESS-EMPLOYEES.
+           DISPLAY "FINISHED EXAMPLE PROGRAM".
+           STOP RUN.
+
+       PROCESS-EMPLOYEES.
+           OPEN INPUT EMPLOYEE-FILE.
+           PERFORM UNTIL EOF
+               READ EMPLOYEE-RECORD
+               IF NOT AT END
+                   PERFORM PROCESS-EMPLOYEE
+               END-IF
+           END-PERFORM
+           CLOSE EMPLOYEE-FILE.
+
+       PROCESS-EMPLOYEE.
+           DISPLAY "Processing employee record...".
+           DISPLAY "Employee name: " EMPLOYEE-NAME.
+           DISPLAY "Employee ID: " EMPLOYEE-ID.
+           DISPLAY "Employee salary: " EMPLOYEE-SALARY.
+           DISPLAY " ".

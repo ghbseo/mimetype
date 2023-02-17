@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpl:document xmlns:xpl="http://www.example.com/xpl"
+              xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <xpl:page>
+        <xpl:region x="1in" y="1in" width="6in" height="8in">
+            <xpl:block font-size="14pt">Example XPL document</xpl:block>
+            <xpl:block font-size="12pt">This is a paragraph of text in XPL.</xpl:block>
+            <xpl:table border="1pt">
+                <xpl:table-row>
+                    <xpl:table-cell font-weight="bold">Name</xpl:table-cell>
+                    <xpl:table-cell font-weight="bold">Age</xpl:table-cell>
+                </xpl:table-row>
+                <xpl:table-row>
+                    <xpl:table-cell>John Smith</xpl:table-cell>
+                    <xpl:table-cell>35</xpl:table-cell>
+                </xpl:table-row>
+                <xpl:table-row>
+                    <xpl:table-cell>Jane Doe</xpl:table-cell>
+                    <xpl:table-cell>42</xpl:table-cell>
+                </xpl:table-row>
+            </xpl:table>
+        </xpl:region>
+    </xpl:page>
+</xpl:document>
